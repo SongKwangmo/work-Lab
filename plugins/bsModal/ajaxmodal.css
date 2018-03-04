@@ -1,0 +1,7 @@
+.ajax-title {display:none;}
+.modal-body img {max-width:100%;}
+
+.page_error_num {font-size:4em;color:#33b3ad;font-weight:bold;text-align:center;margin-bottom:-0.4em;position:relative;}
+.page_error_content {background-color:#33b3ad;color:#fff;text-align:center;padding-top:1em;padding-bottom:1em;margin-bottom:1em;}
+.page_error_content .error_tit {color:#fff;font-size:2em;}
+.page_error_content .error_con {opacity:0.5;}

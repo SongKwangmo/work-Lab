@@ -1,0 +1,47 @@
+$test-str:"tete";
+$test-str2:px;
+
+.ts {contet:$test-str;width:13+$test-str2;}
+
+
+.box1 {
+	color:red;
+	&.box2 {color:blue;}
+}
+
+//Built-in-Function (내장함수)
+$test-color:#ccc;
+$test-color-darken:darken($test-color,20%);
+.test-color {
+	background-color:$test-color;
+	color:$test-color-darken;
+}
+
+
+
+//extend & blind selector
+%container-base{
+	//%로 선택자를 시작하여, css로 출력되지 않으나 @extend를 사용해 scss내에서 상속가능.
+	width:112px;
+}
+
+.box {
+	@extend %container-base;
+	padding:10px;
+}
+
+.container {
+	@extend %container-base;
+	padding:20px;
+}
+
+.size {
+	width:100px;
+	@media screen and (max-width:700px){
+		width:100%;
+	}
+}
+
+@media screen and (max-width:700px){
+	.size{height:100px;}
+}

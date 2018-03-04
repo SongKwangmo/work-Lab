@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="jquery.session.js" charset="utf-8"></script>
+ </head>
+ <body>
+	<button class="ss-create">세션생성</button>
+	<button class="ss-control">일부세션 삭제</button>
+	<button class="ss-del">전체세션 삭제</button>
+ <script>
+$(document).ready(function(){
+	//sessionPrint();
+
+	$(document).on("click",".ss-create",function(){
+		$.session.set("myVar1", "papapa1");
+		$.session.set("myVar2", "papapa2");
+
+		sessionPrint();
+	});
+
+	$(document).on("click",".ss-del",function(){
+		$.session.clear();
+
+		sessionPrint();
+	});
+
+	$(document).on("click",".ss-control",function(){
+		$.session.remove("myVar2");
+
+		sessionPrint();
+	});
+});
+
+function sessionPrint(){
+	console.log("myVar1 : " + $.session.get("myVar1"));
+	console.log("myVar2 : " + $.session.get("myVar2"));
+}
+
+/**** basic example
+$.session.set('some key', 'a value');
+
+$.session.get('some key');
+> "a value"
+
+$.session.clear();
+
+$.session.get('some key');
+> undefined
+
+$.session.set('some key', 'a value').get('some key');
+> "a value"
+
+$.session.remove('some key');
+
+$.session.get('some key');
+> undefined
+*/
+ </script>
+  
+ </body>
+</html>

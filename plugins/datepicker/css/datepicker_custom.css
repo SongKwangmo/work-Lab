@@ -1,0 +1,6 @@
+.datepicker-container {font-family:'Maven Pro','nanum gothic','Noto Sans KR', 'Dotum', '돋움', verdana, sans-serif;}
+.datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {background-color:#1fb7eb;color:#fff;border-radius:0.3em;}
+.datepicker-panel > ul > li.muted, .datepicker-panel > ul > li.muted:hover {color:#ccc;}
+
+.datepicker-top-left, .datepicker-top-right {border-top-color:#1fb7eb;}
+.datepicker-top-left:before, .datepicker-top-right:before {border-bottom-color:#1fb7eb;}

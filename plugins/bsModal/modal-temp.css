@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/***** modal customize *****/
+.modal-content {border-radius:0;border:none;border-right:1px solid rgba(0,0,0,0.2);border-bottom:1px solid rgba(0,0,0,0.2);}
+.modal-header {border:none;background-color:#5897ca;color:#fff;}
+.modal-header .close {font-size:2em;color:inherit;font-weight:100;opacity:1;margin-top:-0.2em;line-height:1;}
+.modal-header .modal-title {font-weight:100;}
+.modal-footer {border:none;text-align:center;}
+
+.dropdown[data-action=hover] .dropdown-menu {margin-top:-1px;}

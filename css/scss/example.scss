@@ -1,10 +1,15 @@
-$test-str:"tete";
+@import "imported.scss";
+
+
+
+$test-str:"tete1";
 $test-str2:px;
 
 .ts {contet:$test-str;width:13+$test-str2;}
 
 
 .box1 {
+	content:$imported-var;
 	color:red;
 	&.box2 {color:blue;}
 }
@@ -45,3 +50,4 @@ $test-color-darken:darken($test-color,20%);
 @media screen and (max-width:700px){
 	.size{height:100px;}
 }
+
